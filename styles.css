@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
         
     /* Smooth scaling for high-DPI screens */
-    image-rendering: smooth; /* Let browser handle smooth scaling */
+    image-rendering: auto; /* Let browser handle smooth scaling */
         
     /* Optional: fixed background for parallax effect */
     background-attachment: fixed;
