@@ -8,7 +8,7 @@
 }
 
 * {
-    background-image: url('/images/woods.png');
+    background-image: url('images/woods.png');
     background-repeat: no-repeat;
     background-position:left top;
 }
