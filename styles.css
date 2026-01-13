@@ -12,7 +12,7 @@
      background-image: url('images/woods.png'); /* Replace with your image path */
     
     /* Make it cover the entire screen */
-    background-size: cover; /* or 'contain' if you want the whole image visible */
+    background-size: contain; /* or 'contain' if you want the whole image visible */
         
     /* Center the image */
     background-position: center;
