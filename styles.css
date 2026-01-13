@@ -8,5 +8,7 @@
 }
 
 * {
-  background-color: black;
+    background-image: url('/images/woods.png');
+    background-repeat: no-repeat;
+    background-position:left top;
 }
