@@ -30,3 +30,48 @@
     min-height: 100vh;
     margin: 0;
 }
+
+        /* CSS variables for easy customization */
+        :root {
+            --title-size: 20px; /* Change this to adjust title size */
+        }
+
+        /* Box styling */
+        .small-box {
+            max-width: 90%;              /* Responsive width */
+            width: 300px;                /* Default width on larger screens */
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin: 20px auto;           /* Center the box */
+        }
+
+        /* Title styling */
+        .box-title {
+            font-size: var(--title-size);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* Content text styling */
+        .box-content {
+          font-family: "Smooch Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+        }
+
+        /* Responsive adjustments for small screens */
+        @media (max-width: 480px) {
+            .small-box {
+                width: 100%;
+                padding: 10px;
+            }
+            .box-title {
+                font-size: calc(var(--title-size) * 0.85); /* Slightly smaller on mobile */
+            }
+        }
