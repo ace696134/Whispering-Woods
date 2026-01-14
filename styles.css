@@ -31,59 +31,83 @@
     margin: 0;
 }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        padding: 20px;
-    }
-    .form-container {
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        max-width: 500px;
-        margin: auto;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-        text-align: center;
-        color: #333;
-    }
-    label {
-        display: block;
-        margin-top: 15px;
-        font-weight: bold;
-    }
-    input, textarea {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        box-sizing: border-box;
-    }
-    input:focus, textarea:focus {
-        border-color: #007BFF;
-        outline: none;
-        box-shadow: 0 0 5px rgba(0,123,255,0.5);
-    }
-    button {
-        margin-top: 20px;
-        padding: 10px;
-        width: 100%;
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    button:hover {
-        background-color: #0056b3;
-    }
-    .saved-message {
-        text-align: center;
-        color: green;
-        margin-top: 10px;
-        display: none;
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    padding: 20px;
+}
+.form-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 550px;
+    margin: auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+    border-color: #ff7eb3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255,126,179,0.5);
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.save-btn:hover {
+    background-color: #45a049;
+}
+.clear-btn {
+    background-color: #f44336;
+    color: white;
+}
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+.email-btn {
+    background-color: #2196F3;
+    color: white;
+}
+.email-btn:hover {
+    background-color: #1976D2;
+}
+.saved-message {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+    display: none;
+}
