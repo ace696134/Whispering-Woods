@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Therapy Intake Form</title>
-
-<!-- Link to external CSS -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,12 +26,16 @@
         <label for="goals">Therapy Goals:</label>
         <textarea id="goals" name="goals" rows="4" placeholder="What do you hope to achieve?"></textarea>
 
-        <button type="submit">Save</button>
+        <div class="button-group">
+            <button type="submit" class="save-btn">💾 Save</button>
+            <button type="button" id="clearBtn" class="clear-btn">🗑 Clear</button>
+            <button type="button" id="emailBtn" class="email-btn">📧 Send to Email</button>
+        </div>
+
         <div class="saved-message" id="savedMessage">Form saved in your browser!</div>
     </form>
 </div>
 
-<!-- Link to external JavaScript -->
 <script src="script.js"></script>
 </body>
 </html>
