@@ -31,37 +31,59 @@
     margin: 0;
 }
 
-    /* Basic page styling */
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        padding: 20px;
     }
-
-    /* Container for the input */
-    .input-container {
+    .form-container {
         background: #fff;
         padding: 20px;
         border-radius: 8px;
+        max-width: 500px;
+        margin: auto;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
-    /* Text box styling */
-    input[type="text"] {
-        width: 250px;
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    input, textarea {
+        width: 100%;
         padding: 10px;
+        margin-top: 5px;
         border: 2px solid #ccc;
         border-radius: 5px;
-        font-size: 16px;
-        transition: border-color 0.3s, box-shadow 0.3s;
+        font-size: 14px;
+        box-sizing: border-box;
     }
-
-    /* Focus effect */
-    input[type="text"]:focus {
+    input:focus, textarea:focus {
         border-color: #007BFF;
-        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
         outline: none;
+        box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .saved-message {
+        text-align: center;
+        color: green;
+        margin-top: 10px;
+        display: none;
     }
