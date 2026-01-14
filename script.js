@@ -1,5 +1,7 @@
 const form = document.getElementById('intakeForm');
 const savedMessage = document.getElementById('savedMessage');
+const clearBtn = document.getElementById('clearBtn');
+const emailBtn = document.getElementById('emailBtn');
 
 // Load saved data from localStorage
 window.onload = () => {
@@ -15,7 +17,7 @@ window.onload = () => {
 
 // Save form data to localStorage
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent page reload
+    e.preventDefault();
 
     const formData = {
         name: document.getElementById('name').value.trim(),
@@ -30,3 +32,26 @@ form.addEventListener('submit', function(e) {
     savedMessage.style.display = 'block';
     setTimeout(() => savedMessage.style.display = 'none', 2000);
 });
+
+// Clear form and localStorage
+clearBtn.addEventListener('click', () => {
+    localStorage.removeItem('therapyIntakeForm');
+    form.reset();
+    alert("Form data cleared from browser.");
+});
+
+// Send form data to email
+emailBtn.addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const age = document.getElementById('age').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const reason = document.getElementById('reason').value.trim();
+    const goals = document.getElementById('goals').value.trim();
+
+    const subject = encodeURIComponent("Therapy Intake Form Submission");
+    const body = encodeURIComponent(
+        `Full Name: ${name}\nAge: ${age}\nEmail: ${email}\nReason for Therapy: ${reason}\nTherapy Goals: ${goals}`
+    );
+
+    // Opens user's email client
+    window.location.href = `mailto:
