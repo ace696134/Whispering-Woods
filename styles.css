@@ -7,30 +7,6 @@
   font-style: normal;
 }
 
-* {
-        /* Link the background image */
-     background-image: url('images/woods.png'); /* Replace with your image path */
-    
-    /* Make it cover the entire screen */
-    background-size: contain; /* or 'contain' if you want the whole image visible */
-        
-    /* Center the image */
-    background-position: center;
-        
-    /* Prevent tiling */
-    background-repeat: no-repeat;
-        
-    /* Smooth scaling for high-DPI screens */
-    image-rendering: auto; /* Let browser handle smooth scaling */
-        
-    /* Optional: fixed background for parallax effect */
-    background-attachment: fixed;
-        
-    /* Ensure full height */
-    min-height: 100vh;
-    margin: 0;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #a8edea, #fed6e3);
